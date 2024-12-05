@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktiv Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body class="font-roboto">
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="https://storage.googleapis.com/a1aa/image/3upEtGtrmf0KFaGX27axcKuvn44NfQRsoXqPRqADmDklaC3TA.jpg" alt="Logo" class="logo">
+                <span class="site-title">Min Portfolio</span>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Hjem</a>
+                <a href="#about" class="nav-link">Om Meg</a>
+                <a href="#skills" class="nav-link">Ferdigheter</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home" class="section home">
+            <h1>Velkommen til Min Portfolio</h1>
+            <p>Utforsk min reise, prosjektene mine og ferdighetene mine.</p>
+            <button id="explore-btn" class="btn">Utforsk Mer</button>
+        </section>
+        
+        <section id="about" class="section about">
+            <h2>Om Meg</h2>
+            <p>Hei, jeg er en student ved Bjørholdt VGS, og dette er arbeidet mitt og mine prosjekter så langt.</p>
+            <div class="fun-fact">
+                <h3>Fun Fact</h3>
+                <p>Min favorittfarge er blå!</p>
+            </div>
+        </section>
+        
+        <section id="skills" class="section skills">
+            <h2>Ferdigheter & Teknologier</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>HTML</h3>
+                    <p>Bygge strukturen for nettsider.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS</h3>
+                    <p>Designe vakre, responsive layouter.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <p>Gjøre nettsider interaktive og dynamiske.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="portfolio" class="section portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="window.open('https://github.com/h4daa/bootstrap-image', '_blank')">
+                    <h3>bootstrap</h3>
+                    <p></p>
+                </div>
+                <div class="portfolio-item" onclick="window.open('https://github.com/h4daa/age-calc', '_blank')">
+                    <h3>age calc</h3>
+                    <p></p>
+                </div>
+                <div class="portfolio-item" onclick="window.open('https://github.com/h4daa/rotating-image-gallery', '_blank')">
+                    <h3>rotating image gallery</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section contact">
+            <h2>Kontakt Meg</h2>
+            <form id="contact-form">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Melding:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Melding</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2023 Min Portfolio. Alle rettigheter forbeholdt.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
